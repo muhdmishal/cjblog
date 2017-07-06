@@ -43,12 +43,14 @@
  * @see html.html.twig
  */
 #}
-<div class="container-fluid">
-
-  <div class="headerfix"></div>
-  <header class="fixed">
+<!-- Navigation -->
+<nav style="margin:0 !important" class="navbar navbar-inverse" role="navigation">
+  <div class="container">
     {{ page.header }}
-  </header>
+  </div>
+</nav>
+
+<div class="container-fluid">
   <main role="main" class="row section">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 

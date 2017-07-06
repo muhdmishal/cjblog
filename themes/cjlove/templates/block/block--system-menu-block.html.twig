@@ -32,34 +32,24 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass('navbar navbar-default')|without('role', 'aria-labelledby') }} class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
+<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass('navbar navbar-default')|without('role', 'aria-labelledby') }} class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-    <div class="navbar-collapse collapse" id="navbar">
+  {# Label. If not displayed, we still provide it for screen readers. #}
+  {% if not configuration.label_display %}
+    {% set title_attributes = title_attributes.addClass('visually-hidden') %}
+  {% endif %}
+  {{ title_prefix }}
+  <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
+  {{ title_suffix }}
 
-      {# Label. If not displayed, we still provide it for screen readers. #}
-      {% if not configuration.label_display %}
-        {% set title_attributes = title_attributes.addClass('visually-hidden') %}
-      {% endif %}
-      {{ title_prefix }}
-      <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
-      {{ title_suffix }}
+  {# Menu. #}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
 
-      {# Menu. #}
-      {% block content %}
-        {{ content }}
-      {% endblock %}
-
-    </div>
-  </div>
-
+  <ul class="nav navbar-nav navbar-right" style="margin-top:5px;">
+    <li class=" nopadding"><a class=" nopadding" href="https://www.facebook.com/cj.love.948"><img src="images/facebook.png" class="floatleft"></a></li>
+    <li class=" nopadding"><a class=" nopadding" href="https://twitter.com/cjlovewholesale"><img src="images/twitter.png" class="floatleft"></a></li>
+  </ul>
 
 </nav>
