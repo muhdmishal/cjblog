@@ -1,0 +1,38 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <a href="contact-bexleyheath-solicitors.html" class="col-sm-3 col-sm-offset-1 hidden-xs btn btn-default contact-nav" style="font-size:1.3em">
+        <span class="glyphicon glyphicon-envelope" style="margin-right:2px"></span>
+      Contact us
+      </a>
+      {% if site_logo %}
+        <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="col-sm-2 col-sm-offset-1 col-xs-6 col-xs-offset-3 logo">
+          <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-responsive" />
+        </a>
+      {% endif %}
+      <a href="" class="col-sm-3 logo pull-right hidden-xs">
+        <b>Bexleyheath: 020 8301 4884</b> <br>
+        <b>Blackheath: 020 3872 6666</b>
+      </a>
+    </div>
+  </div>
+  {% if site_name %}
+    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
+  {% endif %}
+  {{ site_slogan }}
+{% endblock %}
