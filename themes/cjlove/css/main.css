@@ -5,7 +5,7 @@ body{
 	margin:0;
 	padding:0;
 	font-family:"Trajan Pro";
-	
+
 }
 .caption3h2 > a > img {
 	height:50px;
@@ -55,7 +55,7 @@ body{
 	border:22px !important;
 	border-image:url(../images/bg-notice.png) 22 repeat !important;
 	background-image:url(../images/bg.jpg) !important;
-	
+
 }
 .stickynote
 {
@@ -67,7 +67,7 @@ body{
 	background: -ms-linear-gradient(top,  #ffea96 0%,#ffdd56 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #ffea96 0%,#ffdd56 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffea96', endColorstr='#ffdd56',GradientType=0 ); /* IE6-9 */
-	
+
 	box-shadow: 2px 2px 5px #333333;
 }
 .overfolw{
@@ -103,7 +103,7 @@ body{
 	left:auto;
 	right:auto;
 	margin:auto;
-	
+
 }
 h2{
 	color:#FFFFFF !important;
@@ -122,12 +122,12 @@ h2{
 	min-width:100%;
 }
 .border-left{
-	border-left: 5px solid #FFF;  
-	
+	border-left: 5px solid #FFF;
+
 }
 .border-top{
-	border-top: 5px solid #FFF;  
-	
+	border-top: 5px solid #FFF;
+
 }
 .font{
 	font-family:Verdana, Geneva, sans-serif;
@@ -142,7 +142,7 @@ h2{
 	color:#FFFFFF;
 }
 .bgcolor{
-	
+
 	background-color:#0063C2;
 }
 
@@ -153,8 +153,8 @@ h2{
 	min-width:35% !important;
 }
 .border-left{
-	border-left: 0px solid #FFF;  
-	
+	border-left: 0px solid #FFF;
+
 }
 .circle {
 	width:70px !important;
@@ -167,15 +167,15 @@ h2{
 
 }
 .carousel-caption {
-	left:0 !important; 
+	left:0 !important;
 	right:0 !important;
 	width:100% !important;
 }
 
 .title {
-		
+
 		margin-top:-10px;
-	
+
 	}
 .carousel-caption {
 	margin-top:0px !important;
@@ -196,7 +196,7 @@ h2{
 }
 .carousel-control.left {
 	background-image:none !important;
-	
+
 }
 .caption2h2 {
 	position:absolute !important;
@@ -241,7 +241,7 @@ h2{
 .caption3h2 {
 	position:absolute !important;
 	bottom:30px ;
-	
+
 	left:35% ;
 	right:35% ;
 	margin-left:auto !important;
@@ -259,23 +259,23 @@ h2{
 .color-blue{
 	color:#00346e !important;
 	font-size:45px !important;
-	
+
 }
 .corsolfb {
 	overflow-y:scroll;
-	height:50% !important; 
+	height:50% !important;
 }
 .carousel-control{
 	width:5% !important;
 }
 .fill {
-	 background-size:contain !important; 
-	 background-position:center !important;  
+	 background-size:contain !important;
+	 background-position:center !important;
 	 background-repeat:no-repeat !important;
 }
 .carousel-inner {
-		
-		
+
+
 		height:100% !important;
 	}
 	.carousel {
@@ -284,17 +284,17 @@ h2{
 
 @media only screen and (max-width : 420px) {
 	.fill {
-		background-size:200% !important; 
-	 	background-position:center !important;  
+		background-size:200% !important;
+	 	background-position:center !important;
 	 	background-repeat:no-repeat !important;
-		 
+
 	}
 	.title {
-		
+
 		margin-top:-10px;
-	
+
 	}
-	
+
 	.caption2h2 {
 		top:60px !important;
 	}
@@ -307,9 +307,9 @@ h2{
 	h3 {
 		font-size:12px !important;
 	}
-	
+
 	.caption1h1 {
-		
+
 		left:0% !important;
 		text-align:center !important;
 		top:40% !important;
@@ -326,18 +326,18 @@ h2{
 	.bannerposition2 {
 		background-position:45% !important;
 	}
-	
-	
+
+
 	.carousel-inner {
-		
-		
+
+
 		height:350px !important;
 	}
 	.carousel {
 		height:350px !important;
 	}
-	
-	
+
+
 	.caption2h2 {
 		top: 55% ;
 		left:5% !important;
@@ -349,24 +349,24 @@ h2{
 		width:10% !important;
 	}
 	.caption2h3 {
-	
+
 		top: 55% ;
 		right:5% !important;
 		width:10% !important;
 	}
-	
+
 	.caption2h5 {
-		
+
 		top: 55% !important;
 		right:5% !important;
 		width:10% !important;
 	}
-	
+
 	.caption3h2 {
 		left:10%;
 		right:10%;
 		width:80%;
-		 
+
 	}
 	.caption3h2 > a {
 		width:50%;
@@ -374,30 +374,30 @@ h2{
 		float:left;
 		margin-left:0 !important;
 	}
-	
+
 	.caption3h2 > a > img {
 	height:auto !important;
 }
-	
-	
-	
+
+
+
 }
 
 @media only screen and (max-width : 1200px) {
-	
-	
+
+
 	.navbar-nav > li {
 		padding-left:2px !important;
 		padding-right:2px !important;
-		
+
 	}
 	.navbar-nav > li > a {
 		padding-left:2px !important;
 		padding-right:2px !important;
-		
+
 	}
-	
-	
+
+
 	.caption1h1 {
 		width:100% !important;
 		left:10% ;
@@ -410,19 +410,19 @@ h2{
 		text-align:left ;
 		top:65% ;
 	}
-	
-	
-	
+
+
+
 	.carousel-inner {
-		
-		
+
+
 		height:100% !important;
 	}
 	.carousel {
 		height:80% !important;
 	}
-	
-	
+
+
 	.caption2h2 {
 		top: 55% ;
 		left:5% !important;
@@ -434,27 +434,33 @@ h2{
 		width:10% !important;
 	}
 	.caption2h3 {
-	
+
 		top: 55% ;
 		right:5% !important;
 		width:10% !important;
 	}
-	
+
 	.caption2h5 {
-		
+
 		top: 55% !important;
 		right:5% !important;
 		width:10% !important;
 	}
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 }
 
 .thumbnail {
 	overflow:auto !important;
+}
+.links.inline {
+  list-style: none;
+}
+.links.inline li {
+  display: inline;
 }
