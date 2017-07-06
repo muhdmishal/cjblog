@@ -32,7 +32,7 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass('navbar navbar-default')|without('role', 'aria-labelledby') }} class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<nav role="navigation" aria-labelledby="{{ heading_id }}" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
   {# Menu. #}
   {% block content %}
