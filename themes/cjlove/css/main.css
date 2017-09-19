@@ -468,3 +468,10 @@ img {
   width: 100%;
   height: auto;
 }
+.teaser {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.teaser h2 {
+  margin-top: 0;
+}
