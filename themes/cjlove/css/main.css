@@ -464,3 +464,7 @@ h2{
 .links.inline li {
   display: inline;
 }
+img {
+  width: 100%;
+  height: auto;
+}
