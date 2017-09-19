@@ -71,28 +71,22 @@
  */
 #}
 <article{{ attributes }}>
-
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% if display_submitted %}
-    <p>
-      {{ author_picture }}
-      <div{{ author_attributes }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </p>
-  {% endif %}
   <div class="row">
     <div class="col-sm-4">
       {{ content.field_image }}
     </div>
     <div{{ content_attributes.addClass("col-sm-8") }}>
+      {{ title_prefix }}
+      {% if not page %}
+        <h2{{ title_attributes }}>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+      {% endif %}
+      {{ title_suffix }}
+      <div{{ author_attributes }}>
+        {% trans %} By {{ author_name }} on {{ date }}{% endtrans %}
+        {{ metadata }}
+      </div>
       {{ content|without('field_image') }}
     </div>
   </div>
