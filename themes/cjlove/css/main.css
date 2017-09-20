@@ -460,6 +460,7 @@ h2{
 }
 .links.inline {
   list-style: none;
+  padding: 0;
 }
 .links.inline li {
   display: inline;
