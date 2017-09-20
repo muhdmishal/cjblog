@@ -475,3 +475,7 @@ img {
 .teaser h2 {
   margin-top: 0;
 }
+main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
