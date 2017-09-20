@@ -13,6 +13,7 @@ libraries:
 regions:
   header: 'Header'
   banner: 'Banner'
+  title: 'Title'
   content: 'Content'
   sidebar: 'Sidebar'
   footer: 'Footer'
